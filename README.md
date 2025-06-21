@@ -1,4 +1,4 @@
-# 🚀 LLM Comparator
+# 🚀 LLM Compare
 
 A powerful, feature-rich CLI tool to compare responses from multiple Large Language Models (LLMs) and score them for quality. Get the best answers by testing your prompts across OpenAI, Anthropic, Google, and local Ollama models simultaneously.
 
