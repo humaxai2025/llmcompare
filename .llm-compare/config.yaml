@@ -1,0 +1,45 @@
+api_costs:
+  anthropic:
+    claude-3-5-sonnet-latest:
+      input: 0.003
+      output: 0.015
+  google:
+    gemini-1.5-flash:
+      input: 7.5e-05
+      output: 0.0003
+    gemini-1.5-pro:
+      input: 0.00125
+      output: 0.005
+  openai:
+    gpt-4o:
+      input: 0.005
+      output: 0.015
+    gpt-4o-mini:
+      input: 0.00015
+      output: 0.0006
+custom_templates:
+  code_review: 'Review this {language} code for best practices: {code}'
+  debug_issue: 'Help me debug this {language} issue: {problem}'
+  explain_code: 'Explain this {language} code step by step: {code}'
+  optimize_code: 'Suggest optimizations for this {language} code: {code}'
+default_models:
+  anthropic:
+  - claude-3-5-sonnet-latest
+  google:
+  - gemini-2.0-flash
+  ollama:
+  - llama3.2
+  openai:
+  - gpt-4o
+  - gpt-4o-mini
+output:
+  color: true
+  default_format: table
+  max_response_length: 200
+scoring_weights:
+  accuracy: 0.2
+  clarity: 0.2
+  completeness: 0.2
+  creativity: 0.1
+  helpfulness: 0.05
+  relevance: 0.25
